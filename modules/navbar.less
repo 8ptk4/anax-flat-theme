@@ -1,0 +1,98 @@
+/**
+* Style for navbarTOP - regular menu
+*/
+
+////////////////////////////////////////////////////////////////////////////////
+// Variables for buttons in navbar /////////////////////////////////////////////
+@backgroundOppacity: 30%;
+@button1: green;
+@button2: #0008d5;
+@button3: #cd02b9;
+@button4: yellow;
+@fadeTime: 1s;
+@buttonRadius: 14px;
+@borderStyle: solid;
+@borderSize: 4px;
+@textColor: yellow;
+
+////////////////////////////////////////////////////////////////////////////////
+// Style for buttons //////////////////////////////////////////////////////////
+.button(@thickness; @style; @color) {
+    border: @arguments;
+    background-color: lighten(@color, @backgroundOppacity);
+    text-decoration: none;
+    border-radius: @buttonRadius;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background @fadeTime linear;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Top navbar menu /////////////////////////////////////////////////////////////
+.navbar2 {
+    float: left;
+    text-align: center;
+    width: 70%;
+    color: white;
+    margin-top: 6px;
+    text-align: center;
+
+    a {
+        // Have to set a standard so effects dont pushes button around.
+        .button(@borderSize; @borderStyle; transparent);
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// The buttons /////////////////////////////////////////////////////////////////
+.rm-desktop {
+    li:nth-child(1) {
+        a:hover {
+            .button(@borderSize; @borderStyle; @button1);
+        }
+    }
+    li:nth-child(2) {
+        a:hover {
+            .button(@borderSize; @borderStyle; @button2);
+        }
+    }
+    li:nth-child(3) {
+        a:hover {
+            .button(@borderSize; @borderStyle; @button3);
+        }
+    }
+    li:nth-child(4) {
+        a:hover {
+            .button(@borderSize; @borderStyle; @button4);
+        }
+    }
+}
+
+/*  Min fina loop som hade sparat massor av rader kod
+
+.button-loop(@n; @i:0) when (@i < @n) {
+    .rm-desktop li:nth-child(@{i}) {
+        a {
+            .button(@borderSize; @borderStyle; transparent);
+        }
+        a:hover {
+            .button(@borderSize; @borderStyle; @button-->>>3<<<--); /// FRUKTANSVÄRT IRRITERANDE
+        }
+    }
+    .button-loop(@n; (@i + 1));
+}
+.button-loop(5);
+*/
+
+
+/**
+ * Style for navbarMAX - small screens
+ */
+
+ // Navbar max
+.rm-max .rm-small .rm-button {
+    margin-top: 5px;
+    font-size: 2em;
+    color: #fff;
+}
