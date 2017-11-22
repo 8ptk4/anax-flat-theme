@@ -1,0 +1,203 @@
+/**
+ * Grid layout and positioning of elements on page.
+ */
+
+@import "grid-helpers.less";
+
+@maxWidth: 940px;
+
+// Turn block backgrounds on/off by changing to true or false.
+@gridBG: false;
+
+// Report page
+.route-report,
+.route-report-intro,
+.route-report-kmom01,
+.route-report-kmom02,
+.route-report-kmom03,
+.route-report-kmom04,
+.route-report-kmom05,
+.route-report-kmom06,
+.route-analysis,
+.route-analysis-intro,
+.route-analysis-colorscheme {
+    .sidebar-left {
+        .column(3);
+    }
+    .main {
+        .column(9);
+    }
+
+    .next {
+        float: left;
+        width: 50%;
+    }
+    .previous {
+        width: 50%;
+        float: right;
+        text-align: right;
+    }
+}
+
+// About page
+.route-about {
+    .main {
+        .column(12);
+    }
+}
+
+// Typography page
+.route-typography {
+    .main {
+        .column(12);
+    }
+}
+
+// Markdown page
+.route-markdown {
+    .main {
+        .column(12);
+    }
+}
+
+// Index page
+
+.route- {
+    .main {
+        .column(12);
+    }
+}
+
+
+
+.inner-wrap {
+    margin: 0 auto;
+    max-width: @maxWidth;
+}
+
+
+.inner-wrap {
+    .container();
+    margin: 0 auto;
+    max-width: @maxWidth;
+
+    html.hgrid & {
+        .showGrid(@maxWidth);
+    }
+
+}
+
+.outer-wrap-header,
+.outer-wrap-main,
+.outer-wrap-flash,
+.outer-wrap-breadcrumb, {
+    margin-bottom: 24px;
+}
+
+.row {
+    .row();
+}
+
+.main {
+    .column(8);
+    & when (@gridBG = true) {
+        background-color: green;
+        opacity: 0.5;
+    }
+}
+
+.sidebar-left {
+    .column(2);
+    overflow: none;
+    border: none;
+    & when (@gridBG = true) {
+        background: red;
+        opacity: 0.5;
+    }
+}
+
+.sidebar-right {
+    .column(2);
+    overflow: none;
+    border: none;
+    & when (@gridBG = true) {
+        background: orange;
+        opacity: 0.5;
+    }
+}
+
+.byline {
+    margin-top: 0;
+    border: none;
+    .column(12);
+}
+
+.footer-column {
+    .column(4);
+    & when (@gridBG = true) {
+        background-color: brown;
+        opacity: 0.5;
+    }
+}
+
+.footer-column-wrapper {
+    .clearfix();
+    text-align: center !important;
+}
+
+.site-footer {
+    .column(12);
+    & when (@gridBG = true) {
+        background-color: yellow;
+        opacity: 0.5;
+    }
+    margin-top: 12px;
+    text-align: center !important;
+}
+
+.breadcrumb-wrap {
+    .column(12);
+    margin-top: -1px;
+    height: 48px !important;
+    & when (@gridBG = true) {
+        background-color: blue;
+        opacity: 0.5;
+    }
+
+    li {
+        display: inline;
+
+        &::after {
+            content: " » ";
+        }
+    }
+
+}
+
+
+// HEADER
+.site-logo-text {
+    .column(2);
+    & when (@gridBG = true) {
+        background-color: pink;
+        opacity: 0.5;
+    }
+}
+
+.navbar2 {
+    .column(10);
+    & when (@gridBG = true) {
+        background-color: violet;
+        opacity: 0.5;
+    }
+    //text-align: left;
+}
+
+.outer-wrap-flash {
+    height: (24px * 8px);
+}
+.flash-wrap {
+    display: block;
+    max-width: 100%;
+
+}

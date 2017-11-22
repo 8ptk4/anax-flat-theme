@@ -2,49 +2,73 @@
  * Media Querys for responsive design
  */
 
-
-@media screen and (max-width: 890px) {
-
-    .navbar2 {
-        width: 70%;
-    }
-
-    .profile {
-        width: 10%;
-    }
-
-    .site-logo-text {
-        a {
-            font-size:  0;
-        }
+@media screen and (min-width: 530px) {
+    .rm-button {
+        display: none !important;
     }
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 844px) {
+    .navbar2 {
+        .column(12);
+    }
+
+    .site-logo-text {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .sidebar-left {
+        .column(12);
+        margin-bottom: 24px;
+    }
+    .sidebar-right {
+        .column(12);
+    }
+
+    .main {
+        .column(12);
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .sidebar-left {
+        .column(12);
+        margin-bottom: 24px;
+    }
+
     .navbar2 {
         display: none;
     }
 
-    .site-logo-text {
-        width: 100%;
-        a {
-            font-size: 30px;
-        }
+    .sidebar-right {
+        display: none;
     }
-}
 
-// For the footer responsivity
-@media screen and (max-width: 700px) {
     .footer-column {
-        width: 100%;
+        .column(12);
+        margin-bottom: 24px;
     }
-    .sidebar {
-        width: 100%;
-    }
-}
 
-@media screen and (min-width: 636px) {
-    .profile {
-        display: none;
+    .site-logo-text {
+        .column(12);
     }
+
+    .site-footer {
+        margin-top: -24px;
+    }
+
+    .main {
+        .column(12);
+        margin-bottom: 0;
+        display: inline;
+    }
+
+    .wrap-all {
+        margin-bottom: 826px !important;/* Height of footer*/
+    }
+
 }

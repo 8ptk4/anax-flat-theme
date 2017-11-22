@@ -8,12 +8,12 @@
 @button1: green;
 @button2: #0008d5;
 @button3: #cd02b9;
-@button4: yellow;
+@button4: #642cda;
+@button5: brown;
 @fadeTime: 1s;
 @buttonRadius: 14px;
 @borderStyle: solid;
 @borderSize: 4px;
-@textColor: yellow;
 
 ////////////////////////////////////////////////////////////////////////////////
 // Style for buttons //////////////////////////////////////////////////////////
@@ -35,12 +35,13 @@
     text-align: center;
     width: 70%;
     color: white;
-    margin-top: 6px;
     text-align: center;
 
     a {
         // Have to set a standard so effects dont pushes button around.
         .button(@borderSize; @borderStyle; transparent);
+        //padding-top: 8px !important;
+        //padding-bottom: 9px !important;
     }
 }
 
@@ -65,6 +66,11 @@
     li:nth-child(4) {
         a:hover {
             .button(@borderSize; @borderStyle; @button4);
+        }
+    }
+    li:nth-child(5) {
+        a:hover {
+            .button(@borderSize; @borderStyle; @button5);
         }
     }
 }

@@ -18,6 +18,62 @@
     }
 }
 
+.sidebar-left {
+    h4 {
+        border-bottom: 5px #0129e1 solid;
+        display: inline-block;
+        line-height: 1.85;
+        margin-bottom: 0;
+        position: relative;
+    }
+    .toc {
+        //list-style-type: none;
+        padding:0;
+        margin:0;
+        margin-top: 5px;
+        position: relative;
 
-// This works better
-@import url(mediaquery.less);
+        ul li {
+            color: white;
+        }
+
+        ul li:hover {
+            color: #0129e1;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+.inner-wrap-footer {
+    .row {
+        background-color: #0DB2EC !important;
+
+        border-top: 5px solid #0129E1;
+
+        margin-bottom: 0 !important;
+
+    }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrap-all {
+    margin-bottom: 500px;/* Height of footer*/
+}
+
+.body {
+  display:flex !important;
+  flex-direction:column !important;
+}
+
+/*Normalize html and body elements,this style is just good to have*/
+html {
+    position:relative;
+    min-height: 100%;
+}
