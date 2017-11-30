@@ -1,13 +1,22 @@
 /** --------------------------------------------------------------
  *  Site FOOTER
  * -------------------------------------------------------------- */
-/*
-.footer {
-    text-align: center;
+@footer_backgroundColor: #0db2ec;
+@footer_borderColor: #0129e1;
+@footer_borderSize: 5px;
 
-    ul {
-        text-align: left;
-        padding-left: 40%;
-    }
-}
-*/
+
+ .inner-wrap-footer {
+     .row {
+         background-color: @footer_backgroundColor;
+
+         border-top: @footer_borderSize solid @footer_borderColor;
+
+         margin-bottom: 0 !important;
+
+     }
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+ }

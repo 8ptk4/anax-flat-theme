@@ -7,10 +7,17 @@
   *  Site HEADER
   */
 
+@header_backgroundColor: #0db2ec;
+@header_borderColor: #0129e1;
+@header_borderSize: 5px;
+@header_height: 91px;
+
+@logo_textColor: white;
+
 .site-header {
-    height: 91px;
-    border-bottom: 5px solid #0129e1;
-    background-color: #0db2ec;
+    height: @header_height;
+    border-bottom: @header_borderSize solid @header_borderColor;
+    background-color: @header_backgroundColor;
 }
 
 .rm-desktop {
@@ -18,8 +25,8 @@
 }
 
  // Header flash img
- img {
-     max-width: 100%;
+img {
+    max-width: 100%;
 }
 
  // Header small logo/text
@@ -31,6 +38,6 @@
 
     a {
         text-decoration: none;
-        color: white;
+        color: @logo_textColor;
     }
 }

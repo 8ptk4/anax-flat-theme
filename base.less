@@ -1,0 +1,75 @@
+/**
+* Anax Flat theme.
+*/
+
+//Import style.less
+@import url(style.less);
+
+//Navbar buttons style
+@backgroundOppacity: none;
+@button1: black;
+@button2: black;
+@button3: black;
+@button4: black;
+@button5: black;
+@fadeTime: none;
+@buttonRadius: none;
+@borderStyle: solid;
+@borderSize: none;
+@button_textColor: black;
+@button_fontFamily: none;
+
+//Header style
+@header_backgroundColor: none;
+@header_borderColor: grey;
+@header_borderSize: none;
+@logo_textColor: black;
+
+//Footer style
+@footer_backgroundColor: none;
+@footer_borderColor: grey;
+@footer_borderSize: none;
+
+//Main page
+@page_textColor: black;
+@page_backgroundImage: none;
+
+@page_h1: black;
+@page_h: black;
+
+@page_aColor: black;
+@oage_aHoverColor: none;
+
+
+//Sidebar
+@sidebar_borderColor: black;
+@siderbar_borderSize: 4px;
+
+html {
+    color: @page_textColor;
+    background-image: @page_backgroundImage;
+
+    //Page links
+    a {
+        color: @page_aColor;
+    }
+
+    a:hover {
+        color: @oage_aHoverColor;
+    }
+
+    h1 {
+        color: @page_h1;
+    }
+
+    h2,h3,h4,h5,h6 {
+        color: @page_h;
+    }
+
+    .sidebar-left h4 {
+        border-bottom: @siderbar_borderSize solid @sidebar_borderColor;
+        //border-color: @sidebar_borderColor;
+    }
+
+
+}

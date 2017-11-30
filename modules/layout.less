@@ -4,10 +4,32 @@
 
 @import "grid-helpers.less";
 
-@maxWidth: 940px;
+@maxWidth: 960px;
 
 // Turn block backgrounds on/off by changing to true or false.
 @gridBG: false;
+
+.route-grid,
+.hgrid
+{
+    .inner-wrap {
+        .showGrid(@maxWidth);
+    }
+    .site-header {
+        .showGrid(@maxWidth);
+        background-color: transparent !important;
+    }
+    .inner-wrap-footer {
+        .row {
+            background-color: transparent !important;
+        }
+        .showGrid(@maxWidth);
+        background-color: transparent !important;
+    }
+    .showGrid(@maxWidth);
+}
+
+
 
 // Report page
 .route-report,
@@ -45,6 +67,12 @@
         .column(12);
     }
 }
+// Theme page
+.route-theme {
+    .main {
+        .column(12);
+    }
+}
 
 // Typography page
 .route-typography {
@@ -68,28 +96,14 @@
     }
 }
 
-
-
-.inner-wrap {
-    margin: 0 auto;
-    max-width: @maxWidth;
-}
-
-
 .inner-wrap {
     .container();
     margin: 0 auto;
     max-width: @maxWidth;
-
-    html.hgrid & {
-        .showGrid(@maxWidth);
-    }
-
 }
 
 .outer-wrap-header,
 .outer-wrap-main,
-.outer-wrap-flash,
 .outer-wrap-breadcrumb, {
     margin-bottom: 24px;
 }

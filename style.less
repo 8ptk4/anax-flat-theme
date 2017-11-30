@@ -1,11 +1,36 @@
 /**
 * Anax Flat theme.
+* Style.less
 */
+
 @import url(modules.less);
 
-/** --------------------------------------------------------------
- *  Logo images
- */
+@sidebar_aColor: black;
+@sidebar_aHoverColor: none;
+@li_bulletHover: #0129e1;
+
+@footer_heading: white;
+@footer_aColor: black;
+@footer_aHover: grey;
+
+// Page wrap, body and html
+.wrap-all {
+    margin-bottom: 500px;/* Height of footer*/
+}
+
+.body {
+  display:flex !important;
+  flex-direction:column !important;
+}
+
+/*Normalize html and body elements,this style is just good to have*/
+
+html {
+    position:relative;
+    min-height: 100%;
+}
+
+// Navbar Icon/Text
 .logo-1 {
     position: absolute;
     top: 70px;
@@ -17,6 +42,8 @@
         vertical-align: bottom;
     }
 }
+
+// Sidebar left-content
 
 .sidebar-left {
     h4 {
@@ -38,42 +65,29 @@
         }
 
         ul li:hover {
-            color: #0129e1;
+            color: @li_bulletHover;
         }
 
         a {
-            color: black;
+            color: @sidebar_aColor;
             text-decoration: none;
+        }
+        a:hover {
+            color: @sidebar_aHoverColor;
         }
     }
 }
 
-.inner-wrap-footer {
-    .row {
-        background-color: #0DB2EC !important;
-
-        border-top: 5px solid #0129E1;
-
-        margin-bottom: 0 !important;
-
+.footer-column {
+    h4 {
+        color: @footer_heading;
     }
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
-.wrap-all {
-    margin-bottom: 500px;/* Height of footer*/
-}
+    a {
+        color: @footer_aColor;
+    }
 
-.body {
-  display:flex !important;
-  flex-direction:column !important;
-}
-
-/*Normalize html and body elements,this style is just good to have*/
-html {
-    position:relative;
-    min-height: 100%;
+    a:hover {
+        color: @footer_aHover;
+    }
 }

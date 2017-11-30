@@ -1,0 +1,76 @@
+/**
+* Anax Flat theme.
+*/
+@import url(light.less);
+
+
+.flash-wrap img {
+    -webkit-filter: none !important;
+}
+
+@magicNumber: 24px;
+@rows: 4;
+@buttonColor: #FF70C6;
+
+@button_textColor: #716f6f;
+@backgroundOppacity: 30%;
+
+//Header style
+@header_backgroundColor: #FFDFF3;
+@header_borderColor: #FF9FD9;
+@header_borderSize: 4px;
+@logo_textColor: #FF70C6;
+@header_height: (@magicNumber * @rows) - (@header_borderSize);
+
+//Footer style
+@footer_backgroundColor: #FFDFF3;
+@footer_borderColor: #FF9FD9;
+@footer_borderSize: 4px;
+
+//Sidebar style
+@sidebar_aColor: #716f6f;
+@sidebar_aHoverColor: #FF70C6;
+@li_bulletHover: #FF70C6;
+
+//Page
+
+html {
+    color: #999999;
+    background-image: none;
+    background-color: white;
+
+    h1 {
+        color: #FF70C6;
+    }
+
+    h2,h3,h4,h5,h6 {
+        color: #716f6f;
+    }
+
+    .sidebar-left h4 {
+        border-color: #FF70C6;
+    }
+
+    a {
+        color: #716f6f;
+    }
+
+    a:hover {
+        color: #FF70C6;
+    }
+
+    article img {
+        border: 4px solid black;
+        margin-right: @magicNumber;
+    }
+
+    .site-header {
+        background-color: @header_backgroundColor !important;
+    }
+
+    .inner-wrap-footer {
+        .row {
+            background-color: @footer_backgroundColor;
+        }
+    }
+}
