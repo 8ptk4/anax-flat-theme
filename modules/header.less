@@ -33,11 +33,18 @@ img {
 .site-logo-text {
     font-size: 2em;
     float: left;
-    margin-left: 10px;
-    width: 20%;
+    padding-left: @magicNumber / 2;
+    width: 200px;
 
     a {
         text-decoration: none;
         color: @logo_textColor;
+    }
+}
+
+.outer-wrap-header {
+    .inner-wrap-header,
+    .inner-wrap {
+        max-width: 100% !important;
     }
 }

@@ -12,24 +12,38 @@
 .route-grid,
 .hgrid
 {
+
     .inner-wrap {
         .showGrid(@maxWidth);
     }
-    .site-header {
-        .showGrid(@maxWidth);
-        background-color: transparent !important;
-    }
-    .inner-wrap-footer {
+
+    .inner-wrap-footer,
+    .inner-wrap-header {
         .row {
             background-color: transparent !important;
         }
-        .showGrid(@maxWidth);
+        .site-header {
+            background-color: transparent !important;
+        }
+        .showGrid(100%);
         background-color: transparent !important;
     }
-    .showGrid(@maxWidth);
+    //.showGrid(@maxWidth);
 }
 
-
+.next {
+    margin-top: @magicNumber;
+    margin-bottom: @magicNumber;
+    float: left;
+    width: 50%;
+}
+.previous {
+    margin-top: @magicNumber;
+    margin-bottom: @magicNumber;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
 
 // Report page
 .route-report,
@@ -42,7 +56,8 @@
 .route-report-kmom06,
 .route-analysis,
 .route-analysis-intro,
-.route-analysis-colorscheme {
+.route-analysis-colorscheme,
+.route-analysis-speed_and_usability {
     .sidebar-left {
         .column(3);
     }
@@ -58,6 +73,24 @@
         width: 50%;
         float: right;
         text-align: right;
+    }
+}
+.route-blogg,
+.route-blogg-mitt-forsta-blogginlagg,
+.route-blogg-mitt-andra-blogginlagg,
+.route-blogg-mitt-tredje-blogginlagg,
+.route-blogg-mitt-fjarde-blogginlagg {
+    .main {
+        .column(9);
+    }
+    .sidebar {
+        .column(3);
+    }
+}
+//Images pages
+.route-images {
+    .main {
+        .column(12);
     }
 }
 

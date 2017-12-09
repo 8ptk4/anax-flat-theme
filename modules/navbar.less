@@ -11,6 +11,8 @@
 @button4: #642cda;
 @button5: brown;
 @button6: black;
+@button7: green;
+@button8: #0008d5;
 @fadeTime: 1s;
 @buttonRadius: 14px;
 @borderStyle: solid;
@@ -35,10 +37,10 @@
 // Top navbar menu /////////////////////////////////////////////////////////////
 .navbar2 {
     float: left;
-    text-align: center;
-    width: 70%;
+    width: 1000px;
     color: @button_textColor;
-    text-align: center;
+    text-align: left;
+    position: absolute;
 
     a {
         // Have to set a standard so effects dont pushes button around.
@@ -63,7 +65,7 @@
     }
     .button-loop(@n; (@i + 1));
 }
-.button-loop(7);
+.button-loop(9);
 
 /**
  * Style for navbarMAX - small screens
