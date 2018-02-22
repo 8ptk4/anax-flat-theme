@@ -3,7 +3,7 @@
  */
 
 @import "grid-helpers.less";
-
+@magicNumber: 24px;
 @maxWidth: 960px;
 
 // Turn block backgrounds on/off by changing to true or false.
@@ -24,10 +24,15 @@
         .site-header {
             background-color: transparent !important;
         }
-        .showGrid(100%);
-        background-color: transparent !important;
+        //.showGrid(100%);
+        //background-color: transparent !important;
     }
     //.showGrid(@maxWidth);
+}
+
+.rm-navbar {
+    //.showGrid(100%);
+    //background-color: transparent !important;
 }
 
 .next {
@@ -55,7 +60,8 @@
 .route-analysis,
 .route-analysis-intro,
 .route-analysis-colorscheme,
-.route-analysis-speed_and_usability {
+.route-analysis-speed_and_usability,
+.route-analysis-design-principles {
     .sidebar-left {
         .column(3);
     }
@@ -86,6 +92,12 @@
     }
 }
 
+// Design element
+.route-design-element {
+    .main {
+        .column(12);
+    }
+}
 
 //Images pages
 .route-images {

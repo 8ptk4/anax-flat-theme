@@ -2,15 +2,19 @@
  * Media Querys for responsive design
  */
 
-@media screen and (min-width: 530px) {
+ @hamburger: 530px;
+ @navbar: 995px;
+
+@media screen and (min-width: @hamburger) {
     .rm-button {
         display: none !important;
     }
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: @navbar) {
     .navbar2 {
-        .column(12);
+        //.column(12);
+        display: none !important;
     }
 
     .site-logo-text {
@@ -39,6 +43,13 @@
         .column(12);
         margin-bottom: 24px;
     }
+}
+
+@media screen and (max-width: 530px) {
+
+.wrap-all {
+    margin-bottom: 826px!important;
+}
 
     .navbar2 {
         display: none;
