@@ -1,0 +1,107 @@
+/**
+* Anax Flat theme.
+* Dark.less
+*/
+@import url(style.less);
+
+@magicNumber: 24px;
+@rows: 4;
+
+@buttonColor: #008DDE;
+
+//Button style
+@button1: @buttonColor;
+@button2: @buttonColor;
+@button3: @buttonColor;
+@button4: @buttonColor;
+@button5: @buttonColor;
+@button6: @buttonColor;
+@button7: @buttonColor;
+@button8: @buttonColor;
+@button9: @buttonColor;
+@button10: @buttonColor;
+@button_textColor: #716f6f;
+@backgroundOppacity: none;
+
+//Header style
+@header_borderColor: #000;
+@header_borderSize: 4px;
+@logo_textColor: #008DDE;
+@header_height: (@magicNumber * @rows) - (@header_borderSize);
+
+//Footer style
+@footer_backgroundColor: rgba(0, 0, 0, 0.4);
+@footer_borderColor: #000;
+@footer_borderSize: 4px;
+@footer_heading: #716f6f;
+@footer_aColor: #716f6f;
+@footer_hover: #008DDE !important;
+
+//Sidebar style
+@sidebar_aColor: #716f6f;
+@sidebar_aHoverColor: #008DDE;
+@li_bulletHover: #008DDE;
+
+
+
+html {
+    color: #F3F3F3;
+    background-image: url("../../htdocs/img/squares.png");
+
+    .outer-wrap-main {
+        z-index: 1;
+    }
+
+    .outer-wrap-main:before {
+        content: url("../../htdocs/img/element_images/octopus.png");
+        z-index: -1;
+        position: absolute;
+        left: -820px;
+        top: 120px;
+        padding-left: 43%;
+    }
+
+    .outer-wrap-main:after {
+        z-index: -2;
+        content: url("../../htdocs/img/element_images/splash.png");
+        position: absolute;
+        right: 0;
+        bottom: 200px;
+        margin: auto;
+    }
+
+    .sidebar-left {
+        img {
+            margin-left: 420px !important;
+        }
+    }
+
+    h1 {
+        color: #008DDE;
+    }
+
+    h2,h3,h4,h5,h6 {
+        color: #C8C6C6;
+    }
+
+    .sidebar-left h4 {
+        border-color: #008DDE;
+    }
+
+    a {
+        color: #716f6f;
+    }
+
+    a:hover {
+        color: #008DDE;
+    }
+
+    .flash-wrap img {
+        -webkit-filter: grayscale(100%);
+    }
+
+    .site-header {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        color: grey !important;
+    }
+}

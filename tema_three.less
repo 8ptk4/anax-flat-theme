@@ -1,0 +1,107 @@
+/**
+* Anax Flat theme.
+* Light.less
+*/
+
+@import url(dark.less);
+
+
+.flash-wrap img {
+    -webkit-filter: grayscale(100%);
+    max-width: 1000px;
+}
+
+@magicNumber: 24px;
+@rows: 4;
+
+@buttonColor: #999;
+
+@button_textColor: #999;
+@backgroundOppacity: 30%;
+
+//Header style
+@header_borderColor: #6B6969;
+@header_borderSize: 4px;
+@logo_textColor: #6B6969;
+@header_height: (@magicNumber * @rows) - (@header_borderSize);
+
+//Footer style
+@footer_backgroundColor: white;
+@footer_borderColor: #6B6969;
+@footer_borderSize: 4px;
+
+@footer_heading: #999;
+@footer_aColor: #716f6f;
+@footer_aHover: lighten(grey, 30%);
+
+//Sidebar style
+@sidebar_aColor: #716f6f;
+@sidebar_aHoverColor: lighten(grey, 30%);
+@li_bulletHover: #6B6969;
+
+//Page
+
+html {
+    color: #1A1A1A;
+    background-image: url("../../htdocs/img/winter_mountain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    h1 {
+        color: #1A1A1A;
+    }
+
+    h2,h3,h4,h5,h6 {
+        color: #1A1A1A;
+    }
+
+    .sidebar-left h4 {
+        border-color: #6B6969;
+    }
+
+    a {
+        color: #1A1A1A;
+    }
+
+    a:hover {
+        color: lighten(#1A1A1A, 40%);
+    }
+
+    .site-header {
+        background-color: #F3F3F3 !important;
+    }
+
+    .inner-wrap-footer {
+        position: relative;
+    }
+
+    .inner-wrap {
+        max-width: 90%;
+    }
+
+    .inner-wrap-flash {
+        text-align: center;
+    }
+
+    .test {
+        display: none;
+    }
+
+    .inner-wrap-main {
+        padding-bottom: 30px;
+    }
+    .outer-wrap-main {
+        margin-bottom: -33px;
+    }
+
+    .wrap-all {
+        background-color: fade(white, 65%);
+        margin-bottom: 0px;
+    }
+
+
+}
