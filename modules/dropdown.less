@@ -1,0 +1,29 @@
+@dropdown_background: white;
+@dropdown_border_color: grey;
+@dropdown_a_color: black;
+@dropdown_hover_background: white;
+
+.rm-desktop {
+    li {
+        ul {
+            background: fade(@dropdown_background, 90%) !important;
+            border: 2px solid @dropdown_border_color;
+            li {
+                a {
+                    border: none !important;
+                    border-radius: 0 !important;
+                    color: @dropdown_a_color;
+                }
+                a:hover {
+                    transition: none !important;
+                    border: none !important;
+                    background: fade(@dropdown_hover_background, 30%) !important;
+                    padding: none !important;
+                    border-radius: 0 !important;
+                    margin: none !important;
+                    color: @dropdown_a_color;
+                }
+            }
+        }
+    }
+}
