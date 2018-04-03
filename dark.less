@@ -5,10 +5,10 @@
 @import url(style.less);
 
 // Change navbar dropdown style
-@dropdown_background: #191919;
+@dropdown_background: #1A1A1A;
 @dropdown_border_color: black;
-@dropdown_hover_background: white;
-@dropdown_a_color: grey;
+@dropdown_hover_background: grey;
+@dropdown_a_color: #716f6f;
 
 @magicNumber: 24px;
 @rows: 4;
@@ -28,7 +28,7 @@
 @backgroundOppacity: none;
 
 //Header style
-@header_borderColor: #000;
+@header_borderColor: black;
 @header_borderSize: 4px;
 @logo_textColor: #008DDE;
 @header_height: (@magicNumber * @rows) - (@header_borderSize);
@@ -68,10 +68,6 @@ html {
 
     a:hover {
         color: #008DDE;
-    }
-
-    .flash-wrap img {
-        -webkit-filter: grayscale(100%);
     }
 
     .site-header {
