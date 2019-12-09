@@ -1,0 +1,106 @@
+/**
+* Anax Flat theme.
+*/
+@import url(dark.less);
+
+
+.article div {
+    margin: @magicNumber / 2;
+    text-align: justify;
+}
+
+h1::first-letter {
+    font-size: 200%;
+    color: #008DDE;
+}
+h1 {
+    color: #fff !important;
+}
+
+.site-header {
+    background-image: linear-gradient(black, grey) !important;
+}
+
+.main {
+    outline: 1px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+
+    h1,
+    p,
+    figure {
+        margin-left: @magicNumber / 2;
+    }
+
+    p {
+        margin-right: @magicNumber / 2;
+        text-align: justify;
+    }
+}
+
+html {
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(255, 255, 255, 0.5)),url("../../htdocs/img/tunnel.jpg");
+    //background-image: url("../../htdocs/img/winter_mountain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.breadcrumb-wrap {
+    outline: 1px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar-left {
+    outline: 1px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar {
+    outline: 1px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.site-header {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.inner-wrap-footer {
+    -webkit-box-shadow: 0px 5px -10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px -10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px -10px 0px rgba(0,0,0,0.75);
+    background-image: linear-gradient(grey, black);
+}
+
+.next-previous {
+    height: @magicNumber * 3;
+}
+
+.next {
+    a {
+        margin-left: @magicNumber / 2;
+    }
+}
+
+.previous {
+    a {
+        margin-right: @magicNumber / 2;
+    }
+}

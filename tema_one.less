@@ -8,7 +8,7 @@
 
 @dropdown_background: #606CD4;
 @dropdown_border_color: white;
-@dropdown_hover_background: #606CD4;
+@dropdown_hover_background: #2a305e;
 @dropdown_a_color: #999;
 
 //Navbar buttons style
@@ -24,7 +24,7 @@
 @button9: transparent;
 @button10: transparent;
 @button10: transparent;
-@fadeTime: none;
+@fadeTime: 1s;
 @buttonRadius: none;
 @borderStyle: solid;
 @borderSize: none;
@@ -37,7 +37,7 @@
 @buttonColor: #999;
 
 @button_textColor: #999;
-@backgroundOppacity: 30%;
+@backgroundOppac    ity: 30%;
 
 //Header style
 @header_borderColor: #6B6969;
@@ -145,7 +145,7 @@
 
     img {
         -webkit-filter: grayscale(100%);
-        max-width: 100%;
+        //max-width: 100%;
         height: auto !important;
     }
 }
@@ -211,7 +211,6 @@
     .push(2);
     .next,
     .previous {
-        background-color: white;
         margin-top: 0;
         width: 45%;
     }
@@ -254,22 +253,10 @@
         color: #481c75 !important;
     }
 
-
     a:hover {
         color: #c0a5dc !important;
         border-bottom: 4px solid black !important;
         border-color:  #481c75 !important;
-    }
-
-    a:hover:after {
-        content: "";
-        display: block;
-        border: 12px solid fade(#481c75, 0%);
-        border-bottom-color: #481c75;
-        position: absolute;
-        bottom: 4px;
-        left: 50%;
-        margin-left: -12px;
     }
 }
 
@@ -296,8 +283,6 @@
     margin-right: 0 !important;
     height: 67px;
     border-bottom: none;
-    //width: 980px;
-
 }
 
 .selected {

@@ -3,7 +3,12 @@
 * Light.less
 */
 
-@import url(dark.less);
+@import url(light.less);
+
+@dropdown_background: #F3F3F3;
+@dropdown_border_color: #6B6969;
+@dropdown_hover_background: grey;
+@dropdown_a_color: #999;
 
 @magicNumber: 24px;
 @rows: 4;
@@ -37,14 +42,32 @@
 
 html {
     color: #1A1A1A;
-    background-image: url("../../htdocs/img/winter_mountain.jpg");
+    background:linear-gradient(0deg,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url("../../htdocs/img/winter_mountain.jpg");
+    //background-image: url("../../htdocs/img/winter_mountain.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
 
+.outer-wrap-header,
+.inner-wrap-footer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.site-logo-text {
+    display: none;
+}
+
+.navbar2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/*
     h1 {
         color: #1A1A1A;
     }
@@ -69,12 +92,8 @@ html {
         background-color: #F3F3F3 !important;
     }
 
-    .inner-wrap-footer {
-        position: relative;
-    }
-
-    .inner-wrap {
-        max-width: 90%;
+    .inner-wrap-header {
+        width: 80%;
     }
 
     .inner-wrap-flash {
@@ -85,17 +104,9 @@ html {
         display: none;
     }
 
-    .inner-wrap-main {
-        padding-bottom: 30px;
-    }
-    .outer-wrap-main {
-        margin-bottom: -33px;
-    }
-
     .wrap-all {
         background-color: fade(white, 65%);
         margin-bottom: 0px;
     }
-
-
 }
+*/
